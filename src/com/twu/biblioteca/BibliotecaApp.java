@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 import java.io.*;
+import java.util.List;
 
 public class BibliotecaApp {
 
@@ -19,22 +20,16 @@ public class BibliotecaApp {
 
         this.printer.print(this.WelcomeMessage());
 
-        showMainMenu(this.mainMenu);
+        this.mainMenu.showMainMenu(this.printer);
 
         int option = this.acceptor.read();
         while (option != 0){
             this.mainMenu.chooseOptions(option, printer, bookLibrary);
-            showMainMenu(this.mainMenu);
+            this.mainMenu.showMainMenu(this.printer);
             option = this.acceptor.read();
         }
         this.printer.print("See you");
 
-    }
-
-    private void showMainMenu(MainMenu mainMenu) {
-        for (int option = 0; option < mainMenu.GetMainMenuOptions().size(); option++) {
-            printer.print(mainMenu.GetMainMenuOptions().get(option));
-        }
     }
 
     public String WelcomeMessage(){

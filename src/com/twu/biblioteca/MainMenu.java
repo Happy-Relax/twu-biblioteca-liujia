@@ -16,11 +16,10 @@ import java.util.Map;
 public class MainMenu {
 
     private List<String> mainMenu = new ArrayList<>();
-    private List<Integer> validOptions = new ArrayList<>();
 
     public MainMenu (){
         this.mainMenu.add("1.ListBooks");
-        this.validOptions.add(1);
+        this.mainMenu.add("2.Checkout Book");
     }
 
     public List<String> GetMainMenuOptions() {
@@ -32,7 +31,12 @@ public class MainMenu {
             case 1: listBooks(bookLibrary, printer); break;
             default: printer.print("Select a valid option!");
         }
+    }
 
+    public void showMainMenu(PrintStream printer) {
+        for (int item = 0; item < this.mainMenu.size(); item++) {
+            printer.print(this.mainMenu.get(item));
+        }
     }
 
     private void listBooks(BookLibrary bookLibrary, PrintStream printer) {
