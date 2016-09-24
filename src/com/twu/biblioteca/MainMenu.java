@@ -15,10 +15,10 @@ public class MainMenu {
     private List<String> mainMenu = new ArrayList<>();
 
     public MainMenu (){
-        this.mainMenu.add("ListBooks");
+        this.mainMenu.add("1.ListBooks");
     }
 
-    public List<String> GetMainMenu() {
+    public List<String> GetMainMenuOptions() {
         return this.mainMenu;
     }
 }

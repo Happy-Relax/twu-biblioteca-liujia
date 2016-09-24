@@ -1,19 +1,39 @@
 package com.twu.biblioteca;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Scanner;
+import java.io.*;
+import java.util.List;
 
 public class BibliotecaApp {
 
-    public static void main()  {
+    private final PrintStream printer;
+    private final InputStreamReader acceptor;
+    private MainMenu mainMenu = new MainMenu();
+
+
+    public BibliotecaApp(PrintStream printer, InputStreamReader acceptor) {
+        this.printer = printer;
+        this.acceptor = acceptor;
+    }
+
+    public void main() throws IOException {
+
+        this.printer.print(this.WelcomeMessage());
+
+        showMainMenu(this.mainMenu);
+
+        int mainOption = this.acceptor.read();
 
 
     }
 
-    public String Welcome(){
-        return "Welcome to Biblioteca";
+    private void showMainMenu(MainMenu mainMenu) {
+        for (int option = 0; option < mainMenu.GetMainMenuOptions().size(); option++) {
+            printer.print(mainMenu.GetMainMenuOptions().get(option));
+        }
+    }
+
+    public String WelcomeMessage(){
+        return "WelcomeMessage to Biblioteca";
     }
 
 }
