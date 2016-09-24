@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="781532b4-b37a-42a9-8043-07157f2e51dd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/MainMenu.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MainMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/test.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/test.java" />
     </list>
     <ignored path="TWU_Biblioteca-master.iws" />
@@ -37,11 +36,11 @@
       <file leaf-file-name="BibliotecaApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="465">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1098#1099#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +49,8 @@
       <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+            <state relative-caret-position="541">
+              <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,9 +132,9 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/bibliotecaTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/testTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BookLibrary.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/test.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/test.java" />
       </list>
     </option>
   </component>
@@ -842,44 +841,44 @@
       <workItem from="1474694209617" duration="7935000" />
       <workItem from="1474707022727" duration="525000" />
       <workItem from="1474707636913" duration="744000" />
-      <workItem from="1474708803308" duration="726000" />
+      <workItem from="1474708803308" duration="1073000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="bibliotecaTest_Should_show_welcome_message_and_mainMenu - 2016.09.24 at 15h 54m 41s.xml">
-      <configuration name="bibliotecaTest.Should_show_welcome_message_and_mainMenu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test - 2016.09.24 at 17h 20m 19s.xml">
-      <configuration name="test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test - 2016.09.24 at 17h 23m 02s.xml">
-      <configuration name="test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test - 2016.09.24 at 17h 25m 14s.xml">
-      <configuration name="test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 27m 48s.xml">
-      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 31m 00s.xml">
       <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_Should_return_error_message_when_choose_a_invalid_option - 2016.09.24 at 17h 30m 04s.xml">
-      <configuration name="test.Should_return_error_message_when_choose_a_invalid_option" configurationId="JUnit" />
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 33m 55s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_Should_return_error_message_when_choose_a_invalid_option - 2016.09.24 at 17h 30m 22s.xml">
-      <configuration name="test.Should_return_error_message_when_choose_a_invalid_option" configurationId="JUnit" />
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 34m 15s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_Should_return_error_message_when_choose_a_invalid_option - 2016.09.24 at 17h 30m 57s.xml">
-      <configuration name="test.Should_return_error_message_when_choose_a_invalid_option" configurationId="JUnit" />
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 34m 40s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_Should_show_welcome_message_and_mainMenu - 2016.09.24 at 17h 22m 00s.xml">
-      <configuration name="test.Should_show_welcome_message_and_mainMenu" configurationId="JUnit" />
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 35m 44s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 36m 21s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 36m 29s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 37m 27s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 37m 53s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_Should_can_choose_again_when_not_choose_quit - 2016.09.24 at 17h 37m 59s.xml">
+      <configuration name="test.Should_can_choose_again_when_not_choose_quit" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9930000" />
+    <option name="totallyTimeSpent" value="10277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-239" y="-1177" width="1920" height="1177" extended-state="6" />
@@ -890,9 +889,9 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20758122" sideWeight="0.5229167" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3628159" sideWeight="0.51666665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20758122" sideWeight="0.47708333" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20758122" sideWeight="0.47708333" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -902,7 +901,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36339983" sideWeight="0.48541668" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3628159" sideWeight="0.48333332" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -926,7 +925,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -940,8 +947,8 @@
         <state relative-caret-position="375">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -998,8 +1005,8 @@
         <state relative-caret-position="375">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1056,8 +1063,8 @@
         <state relative-caret-position="375">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1105,8 +1112,8 @@
         <state relative-caret-position="180">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1149,8 +1156,8 @@
         <state relative-caret-position="180">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1193,8 +1200,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1237,8 +1244,8 @@
         <state relative-caret-position="165">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1307,14 +1314,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,14 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1347,10 +1343,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        <state relative-caret-position="541">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -53,15 +53,16 @@ public class test {
     }
 
     @Test
-    public void Should_can_choose_again_when_not_choose_quit() throws IOException {
+    public void Should_close_app_when_choose_quit() throws IOException {
         BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
-        when(accepto.read()).thenReturn(1);
+        when(accepto.read()).thenReturn(1).thenReturn(0);
         bibliotecaApp.main();
         InOrder inOrder = inOrder(printer);
         inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("bookOne author year");
         inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("See you.");
     }
 
 }

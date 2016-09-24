@@ -22,11 +22,12 @@ public class BibliotecaApp {
         showMainMenu(this.mainMenu);
 
         int option = this.acceptor.read();
-//        while (option != 0){
-//
-//        }
-        this.mainMenu.chooseOptions(option, printer, bookLibrary);
-
+        while (option != 0){
+            this.mainMenu.chooseOptions(option, printer, bookLibrary);
+            showMainMenu(this.mainMenu);
+            option = this.acceptor.read();
+        }
+        this.printer.print("See you");
 
     }
 
