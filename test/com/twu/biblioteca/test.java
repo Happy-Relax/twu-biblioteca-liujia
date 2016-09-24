@@ -48,7 +48,7 @@ public class test {
     @Test
     public void Should_return_error_message_when_choose_a_invalid_option() throws IOException {
         BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
-        when(accepto.read()).thenReturn(2).thenReturn(0);
+        when(accepto.read()).thenReturn(100).thenReturn(0);
         bibliotecaApp.main();
         verify(printer).print("Select a valid option!");
     }
@@ -78,6 +78,5 @@ public class test {
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
         inOrder.verify(printer).print("please input the book's number.");
-
     }
 }

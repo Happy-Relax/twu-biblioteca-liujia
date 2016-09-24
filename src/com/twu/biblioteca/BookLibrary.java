@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,10 @@ public class BookLibrary {
         this.books.add(new Book(1, "bookOne", "author", "year"));
     }
 
-    public List<Book> getAllBooks(){
-        return this.books;
+    public void listBooks(PrintStream printer) {
+        for (int index = 0; index < this.books.size(); index++) {
+            Book book = this.books.get(index);
+            printer.print("[number:" +book.bookNumber + "] "+book.bookName + " " + book.author + " " + book.yearPublishe);
+        }
     }
 }

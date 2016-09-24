@@ -28,9 +28,13 @@ public class MainMenu {
 
     public void chooseOptions(int mainOption, PrintStream printer, BookLibrary bookLibrary) throws IOException {
         switch (mainOption){
-            case 1: listBooks(bookLibrary, printer); break;
+            case 1: bookLibrary.listBooks(printer); break;
+            case 2: checkOutBooks();break;
             default: printer.print("Select a valid option!");
         }
+    }
+
+    private void checkOutBooks() {
     }
 
     public void showMainMenu(PrintStream printer) {
@@ -39,12 +43,5 @@ public class MainMenu {
         }
     }
 
-    private void listBooks(BookLibrary bookLibrary, PrintStream printer) {
-        List<Book> allBooks = bookLibrary.getAllBooks();
-        for (int index = 0; index < allBooks.size(); index++) {
-            Book book = allBooks.get(index);
-            printer.print("[number:" +book.bookNumber + "] "+book.bookName + " " + book.author + " " + book.yearPublishe);
-        }
-    }
 }
 
