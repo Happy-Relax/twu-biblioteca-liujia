@@ -43,7 +43,7 @@ public class MainMenu {
         List<Book> allBooks = bookLibrary.getAllBooks();
         for (int index = 0; index < allBooks.size(); index++) {
             Book book = allBooks.get(index);
-            printer.print(book.bookName + " " + book.author + " " + book.yearPublishe);
+            printer.print("[number:" +book.bookNumber + "] "+book.bookName + " " + book.author + " " + book.yearPublishe);
         }
     }
 }
