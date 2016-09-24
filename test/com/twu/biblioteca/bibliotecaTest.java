@@ -8,13 +8,15 @@ import java.io.*;
 import java.nio.CharBuffer;
 import java.util.*;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 
-public class ExampleTest {
+public class bibliotecaTest {
 
     private PrintStream printer;
     private InputStreamReader accepto;
@@ -33,11 +35,12 @@ public class ExampleTest {
 
     }
 
+
     @Test
     public void Should_show_all_books_when_choose_the_first_options() throws IOException {
         BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
-        bibliotecaApp.main();
         when(accepto.read()).thenReturn(1);
+        bibliotecaApp.main();
         verify(printer).print("allBooks");
     }
 

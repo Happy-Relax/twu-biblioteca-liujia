@@ -1,13 +1,13 @@
 package com.twu.biblioteca;
 
 import java.io.*;
-import java.util.List;
 
 public class BibliotecaApp {
 
     private final PrintStream printer;
     private final InputStreamReader acceptor;
     private MainMenu mainMenu = new MainMenu();
+    private BookLibrary bookLibrary = new BookLibrary();
 
 
     public BibliotecaApp(PrintStream printer, InputStreamReader acceptor) {
@@ -21,7 +21,7 @@ public class BibliotecaApp {
 
         showMainMenu(this.mainMenu);
 
-        int mainOption = this.acceptor.read();
+        this.mainMenu.chooseOptions(this.acceptor.read(), printer, bookLibrary);
 
 
     }
