@@ -29,7 +29,8 @@ public class MainMenu {
 
     public void chooseOptions(int mainOption, PrintStream printer, BookLibrary bookLibrary) throws IOException {
         switch (mainOption){
-            case 1: listBooks(bookLibrary, printer);
+            case 1: listBooks(bookLibrary, printer); break;
+            default: printer.print("Select a valid option!");
         }
 
     }

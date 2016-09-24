@@ -45,9 +45,23 @@ public class test {
     }
 
     @Test
-    public void Should_show_all_books_when_choose_list_books_option() {
+    public void Should_return_error_message_when_choose_a_invalid_option() throws IOException {
+        BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
+        when(accepto.read()).thenReturn(2);
+        bibliotecaApp.main();
+        verify(printer).print("Select a valid option!");
+    }
 
-
+    @Test
+    public void Should_can_choose_again_when_not_choose_quit() throws IOException {
+        BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
+        when(accepto.read()).thenReturn(1);
+        bibliotecaApp.main();
+        InOrder inOrder = inOrder(printer);
+        inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
+        inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("bookOne author year");
+        inOrder.verify(printer).print("1.ListBooks");
     }
 
 }
