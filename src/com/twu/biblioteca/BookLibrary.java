@@ -7,13 +7,13 @@ import java.util.List;
  * Created by jiaLiu on 9/24/16.
  */
 public class BookLibrary {
-    private List<String> books = new ArrayList<>();
+    private List<Book> books = new ArrayList<>();
 
     public BookLibrary(){
-        this.books.add("allBooks");
+        this.books.add(new Book("bookOne", "author", "year"));
     }
 
-    public List<String> getAllBooks(){
+    public List<Book> getAllBooks(){
         return this.books;
     }
 }

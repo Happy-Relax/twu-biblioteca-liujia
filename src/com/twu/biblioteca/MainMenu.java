@@ -35,9 +35,10 @@ public class MainMenu {
     }
 
     private void listBooks(BookLibrary bookLibrary, PrintStream printer) {
-        List<String> allBooks = bookLibrary.getAllBooks();
+        List<Book> allBooks = bookLibrary.getAllBooks();
         for (int index = 0; index < allBooks.size(); index++) {
-            printer.print(allBooks.get(index));
+            Book book = allBooks.get(index);
+            printer.print(book.bookName + " " + book.author + " " + book.yearPublishe);
         }
     }
 }
