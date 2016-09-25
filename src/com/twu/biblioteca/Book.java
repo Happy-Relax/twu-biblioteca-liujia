@@ -10,6 +10,7 @@ public class Book {
     public String bookName;
     public String author;
     public String yearPublishe;
+    public boolean hide = false;
 
     public Book(Integer bookNumber, String bookName, String author, String year) {
         this.bookNumber = bookNumber;

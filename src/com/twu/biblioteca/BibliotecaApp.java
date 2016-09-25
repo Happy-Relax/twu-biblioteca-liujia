@@ -24,7 +24,7 @@ public class BibliotecaApp {
 
         int option = this.acceptor.read();
         while (option != 0){
-            this.mainMenu.chooseOptions(option, printer, bookLibrary);
+            this.mainMenu.chooseOptions(option, printer,acceptor, bookLibrary);
             this.mainMenu.showMainMenu(this.printer);
             option = this.acceptor.read();
         }

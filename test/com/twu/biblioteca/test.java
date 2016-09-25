@@ -43,6 +43,7 @@ public class test {
         when(accepto.read()).thenReturn(1).thenReturn(0);
         bibliotecaApp.main();
         verify(printer).print("[number:1] bookOne author year");
+        verify(printer).print("[number:2] bookTwo author year");
     }
 
     @Test
@@ -63,20 +64,39 @@ public class test {
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
         inOrder.verify(printer).print("[number:1] bookOne author year");
+        inOrder.verify(printer).print("[number:2] bookTwo author year");
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
         inOrder.verify(printer).print("See you");
     }
 
     @Test
-    public void Should_can_checkout_book_and_give_tip_when_choose_checkout_book() throws IOException {
+    public void Should_can_checkout_book_and_hide_the_book() throws IOException {
         BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
-        when(accepto.read()).thenReturn(2).thenReturn(0);
+        when(accepto.read()).thenReturn(2).thenReturn(1).thenReturn(1).thenReturn(0);
         bibliotecaApp.main();
         InOrder inOrder = inOrder(printer);
         inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
         inOrder.verify(printer).print("please input the book's number.");
+        inOrder.verify(printer).print("Thank you! Enjoy the book");
+        inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("[number:2] bookTwo author year");
+    }
+
+
+    @Test
+    public void Should_give_error_message_when_checkout_a_invalid_book() throws IOException {
+        BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
+        when(accepto.read()).thenReturn(2).thenReturn(3).thenReturn(0);
+        bibliotecaApp.main();
+        InOrder inOrder = inOrder(printer);
+        inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
+        inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("please input the book's number.");
+        inOrder.verify(printer).print("That book is not available");
     }
 }
