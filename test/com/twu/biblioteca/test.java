@@ -34,6 +34,7 @@ public class test {
         inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
     }
 
 
@@ -63,6 +64,7 @@ public class test {
         inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
         inOrder.verify(printer).print("[number:1] bookOne author year");
         inOrder.verify(printer).print("[number:2] bookTwo author year");
         inOrder.verify(printer).print("1.ListBooks");
@@ -79,6 +81,7 @@ public class test {
         inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
         inOrder.verify(printer).print("please input the book's number.");
         inOrder.verify(printer).print("Thank you! Enjoy the book");
         inOrder.verify(printer).print("1.ListBooks");
@@ -96,7 +99,47 @@ public class test {
         inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
         inOrder.verify(printer).print("1.ListBooks");
         inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
         inOrder.verify(printer).print("please input the book's number.");
         inOrder.verify(printer).print("That book is not available");
     }
+
+    @Test
+    public void Should_can_return_book_and_display_the_book() throws IOException {
+        BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
+        when(accepto.read()).thenReturn(2).thenReturn(1).thenReturn(3).thenReturn(1).thenReturn(1).thenReturn(0);
+        bibliotecaApp.main();
+        InOrder inOrder = inOrder(printer);
+        inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
+        inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
+        inOrder.verify(printer).print("please input the book's number.");
+        inOrder.verify(printer).print("Thank you! Enjoy the book");
+        inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
+        inOrder.verify(printer).print("please input the book's number.");
+        inOrder.verify(printer).print("Thank you for returning the book");
+        inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
+        inOrder.verify(printer).print("[number:1] bookOne author year");
+        inOrder.verify(printer).print("[number:2] bookTwo author year");
+    }
+
+    @Test
+    public void Should_give_error_message_when_return_a_unexist_book() throws IOException {
+        BibliotecaApp bibliotecaApp = new BibliotecaApp(printer,accepto);
+        when(accepto.read()).thenReturn(3).thenReturn(3).thenReturn(0);
+        bibliotecaApp.main();
+        InOrder inOrder = inOrder(printer);
+        inOrder.verify(printer).print("WelcomeMessage to Biblioteca");
+        inOrder.verify(printer).print("1.ListBooks");
+        inOrder.verify(printer).print("2.Checkout Book");
+        inOrder.verify(printer).print("3.Return Book");
+        inOrder.verify(printer).print("please input the book's number.");
+        inOrder.verify(printer).print("That is not a valid book to return");
+    }
+
 }

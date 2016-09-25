@@ -16,13 +16,25 @@ public class MainMenu {
     public MainMenu (){
         this.mainMenu.add("1.ListBooks");
         this.mainMenu.add("2.Checkout Book");
+        this.mainMenu.add("3.Return Book");
     }
 
     public void chooseOptions(int mainOption, PrintStream printer, InputStreamReader acceptor, BookLibrary bookLibrary) throws IOException {
         switch (mainOption){
             case 1: bookLibrary.listBooks(printer); break;
             case 2: checkOutBooks(printer, acceptor, bookLibrary);break;
+            case 3: returnBooks(printer, acceptor, bookLibrary);break;
             default: printer.print("Select a valid option!");
+        }
+    }
+
+    private void returnBooks(PrintStream printer, InputStreamReader acceptor, BookLibrary bookLibrary) throws IOException {
+        printer.print("please input the book's number.");
+        int bookNumber = acceptor.read();
+        if(bookLibrary.returnBook(bookNumber)){
+            printer.print("Thank you for returning the book");
+        } else {
+            printer.print("That is not a valid book to return");
         }
     }
 

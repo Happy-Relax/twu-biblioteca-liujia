@@ -31,4 +31,12 @@ public class BookLibrary {
         this.books.get(bookNumber-1).hide = true;
         return true;
     }
+
+    public boolean returnBook(int bookNumber) {
+        if (this.books.size() < bookNumber){
+            return false;
+        }
+        this.books.get(bookNumber-1).hide = false;
+        return true;
+    }
 }
